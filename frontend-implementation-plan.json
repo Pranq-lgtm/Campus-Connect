@@ -1,0 +1,24 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Remove Caffeine.ai watermark from footer",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "summary": "Remove all Caffeine.ai branding and attribution from the footer in Layout.tsx while keeping the footer element intact",
+      "acceptanceCriteria": [
+        "The site footer renders with no 'Made with Caffeine.ai' text visible",
+        "No anchor tag or link pointing to caffeine.ai or any related URL exists in the footer",
+        "The footer element itself remains present on all pages",
+        "No other Caffeine.ai branding appears anywhere in the footer HTML"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "modify",
+          "description": "Remove all Caffeine.ai attribution content from the footer element including any text, links, or branding references. Keep the footer element structure intact with only the Campus Connect branding."
+        }
+      ]
+    }
+  ]
+}

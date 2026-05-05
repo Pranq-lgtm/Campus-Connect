@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 11,
+  "summary": "Campus Connect website project. A campus-focused web platform to connect students, faculty, or community members. Color theme updated to blue-green palette; 'Made with Caffeine.ai' watermark removed. Brand name styling: 'Campus' in blue, 'Connect' in green across all pages.",
+  "architectural_notes": [
+    "Color theme: blue-green palette (replacing original forest green and gold)",
+    "No 'Made with Caffeine.ai' watermark",
+    "Brand name styling: 'Campus' renders in blue, 'Connect' renders in green across all pages"
+  ],
+  "known_issues": [],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-build-a-home-landing-page-that-introduces-campus-connect-with-a-hero-section-a-brief-tagline-and-quick-access-cards-linking-to-announcements-events-and-community-sections",
+      "title": "Build a Home/Landing page that introduces Campus Connect with a hero section, a brief tagline, and quick-access cards linking to Announcements, Events, and Community sections.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-announcements-page-that-lists-posts-fetched-from-the-backend-each-showing-title-category-badge-author-timestamp-and-body-allow-authenticated-users-to-submit-a-new-announcement-via-a-form",
+      "title": "Build an Announcements page that lists posts fetched from the backend, each showing title, category badge, author, timestamp, and body. Allow authenticated users to submit a new announcement via a form.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-events-page-that-lists-upcoming-campus-events-fetched-from-the-backend-each-showing-title-date-location-and-organizer-allow-authenticated-users-to-submit-a-new-event-via-a-form",
+      "title": "Build an Events page that lists upcoming campus events fetched from the backend, each showing title, date, location, and organizer. Allow authenticated users to submit a new event via a form.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-community-directory-page-that-lists-user-profiles-fetched-from-the-backend-showing-name-role-badge-and-department-include-a-search-filter-by-name-or-department",
+      "title": "Build a Community/Directory page that lists user profiles fetched from the backend, showing name, role badge, and department. Include a search/filter by name or department.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-internet-identity-login-so-that-users-can-authenticate-after-login-display-a-profile-setup-prompt-if-the-user-has-no-profile-yet-allowing-them-to-set-name-role-department-and-bio",
+      "title": "Implement Internet Identity login so that users can authenticate. After login, display a profile setup prompt if the user has no profile yet, allowing them to set name, role, department, and bio.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-visual-theme-across-the-entire-site-a-warm-collegiate-aesthetic-using-deep-forest-green-and-gold-as-primary-brand-colors-clean-serif-headings-paired-with-a-sans-serif-body-font-a-structured-grid-layout-with-card-based-content-blocks-and-subtle-campus-imagery-inspired-decorative-accents-enforce-the-theme-consistently-across-all-pages-and-components",
+      "title": "Apply a cohesive visual theme across the entire site: a warm, collegiate aesthetic using deep forest green and gold as primary brand colors, clean serif headings paired with a sans-serif body font, a structured grid layout with card-based content blocks, and subtle campus-imagery-inspired decorative accents. Enforce the theme consistently across all pages and components.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-forest-green-and-gold-color-palette-with-a-blue-green-teal-cyan-based-palette-across-the-entire-site-update-all-css-custom-properties-in-frontend-src-index-css-tailwind-brand-color-tokens-in-frontend-tailwind-config-js-and-any-hardcoded-color-classes-in-all-page-and-component-files-so-the-new-blue-green-theme-is-applied-consistently-everywhere",
+      "title": "Replace the existing forest green and gold color palette with a blue-green (teal/cyan-based) palette across the entire site. Update all CSS custom properties in frontend/src/index.css, Tailwind brand color tokens in frontend/tailwind.config.js, and any hardcoded color classes in all page and component files so the new blue-green theme is applied consistently everywhere.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-made-with-caffeine-ai-watermark-attribution-link-from-the-site-footer-in-frontend-src-components-layout-tsx-the-footer-may-remain-but-must-not-contain-any-caffeine-ai-branding-text-or-links",
+      "title": "Remove the 'Made with Caffeine.ai' watermark/attribution link from the site footer in frontend/src/components/Layout.tsx. The footer may remain but must not contain any Caffeine.ai branding, text, or links.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-every-page-and-component-file-where-the-word-campus-appears-as-visible-text-including-the-hero-heading-on-homepage-the-navigation-bar-brand-name-the-page-titles-on-announcementspage-eventspage-communitypage-and-any-other-occurrence-site-wide-wrap-or-style-the-word-campus-so-it-renders-in-a-green-color-e-g-tailwind-class-text-green-500-or-an-equivalent-green-css-value-the-selected-element-is-the-second-span-inside-the-h1-in-the-hero-section-of-the-home-page-xpath-html-1-body-1-div-1-div-1-main-1-div-1-section-1-div-3-div-1-h1-1-span-2-apply-the-same-green-treatment-consistently-to-every-other-occurrence-of-the-word-campus-across-all-pages-and-components",
+      "title": "In every page and component file where the word 'Campus' appears as visible text (including the hero heading on HomePage, the Navigation bar brand name, the page titles on AnnouncementsPage, EventsPage, CommunityPage, and any other occurrence site-wide), wrap or style the word 'Campus' so it renders in a green color (e.g. Tailwind class `text-green-500` or an equivalent green CSS value). The selected element is the second `<span>` inside the `<h1>` in the hero section of the home page (XPath: /html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/section[1]/div[3]/div[1]/h1[1]/span[2]). Apply the same green treatment consistently to every other occurrence of the word 'Campus' across all pages and components.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-every-page-and-component-file-where-campus-connect-appears-as-visible-text-including-the-hero-heading-on-homepage-the-navigation-bar-brand-name-the-page-titles-on-announcementspage-eventspage-communitypage-and-any-other-occurrence-site-wide-style-the-word-campus-in-blue-e-g-tailwind-class-text-blue-500-or-equivalent-and-the-word-connect-in-green-e-g-tailwind-class-text-green-500-or-equivalent-each-word-must-be-wrapped-in-its-own-span-with-the-appropriate-color-class-apply-this-treatment-consistently-across-all-pages-and-components",
+      "title": "In every page and component file where 'Campus Connect' appears as visible text (including the hero heading on HomePage, the Navigation bar brand name, the page titles on AnnouncementsPage, EventsPage, CommunityPage, and any other occurrence site-wide), style the word 'Campus' in blue (e.g. Tailwind class `text-blue-500` or equivalent) and the word 'Connect' in green (e.g. Tailwind class `text-green-500` or equivalent). Each word must be wrapped in its own `<span>` with the appropriate color class. Apply this treatment consistently across all pages and components.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-frontend-src-components-layout-tsx-ensure-the-footer-contains-absolutely-no-made-with-caffeine-ai-branding-text-links-or-attribution-of-any-kind-the-footer-element-itself-may-remain-but-must-be-completely-free-of-any-caffeine-ai-references",
+      "title": "In frontend/src/components/Layout.tsx, ensure the footer contains absolutely no 'Made with Caffeine.ai' branding, text, links, or attribution of any kind. The footer element itself may remain, but must be completely free of any Caffeine.ai references.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a backend data model and API to support campus community features: user profiles (name, role: student/faculty/staff, department, bio), announcements/posts (title, body, author, timestamp, category), and events (title, description, date, location, organizer).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Style 'Campus' in blue and 'Connect' in green across all pages and components (hero heading, navigation bar, page titles, etc.).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Campus Connect",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
