@@ -1,0 +1,25 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-in-frontend-src-components-layout-tsx-ensure-the-footer-contains-absolutely-no-made-with-caffeine-ai-branding-text-links-or-attribution-of-any-kind-the-footer-element-itself-may-remain-but-must-be-completely-free-of-any-caffeine-ai-references",
+      "featureTitle": "In frontend/src/components/Layout.tsx, ensure the footer contains absolutely no 'Made with Caffeine.ai' branding, text, links, or attribution of any kind. The footer element itself may remain, but must be completely free of any Caffeine.ai references.",
+      "files": [
+        "frontend/src/components/Layout.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

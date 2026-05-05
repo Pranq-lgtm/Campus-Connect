@@ -1,0 +1,19 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH color system updated to blue-green (teal/cyan) brand tokens, imports Playfair Display and Inter fonts, sets up light/dark mode variables using teal hue (200°).",
+  "frontend/tailwind.config.js": "Tailwind configuration updated with teal/cyan color palettes replacing forest/gold, retaining Playfair Display heading font, Inter body font, card border-radius, and custom card shadow utilities.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations: user profiles (get/save/list), announcements (list/create/delete), and events (list/create/delete) with proper query invalidation.",
+  "frontend/src/lib/utils.ts": "Utility functions including cn() for class merging, timestamp formatters for announcements and events, date-to-nanoseconds converter, and upcoming event checker.",
+  "frontend/src/components/Navigation.tsx": "Sticky header navigation with teal-800 background; \"Campus\" in the brand logo is now rendered in blue (text-blue-400) and \"Connect\" in green (text-green-400).",
+  "frontend/src/components/ProfileSetupModal.tsx": "First-time user profile setup dialog with teal/cyan icon and form styling, replacing all forest/gold color references.",
+  "frontend/src/components/Layout.tsx": "Root layout wrapper with Navigation and footer; footer shows the blue/green \"CampusConnect\" brand name and copyright year, with the Caffeine.ai attribution fully removed.",
+  "frontend/src/components/AnnouncementCard.tsx": "Reusable card displaying announcement title, color-coded category badge (teal/cyan replacing forest/gold), body text, author name, and formatted timestamp with optional delete button.",
+  "frontend/src/components/AnnouncementForm.tsx": "Collapsible form for posting announcements with teal-themed button, inputs, and card border; replaces all forest/gold color references with teal/cyan.",
+  "frontend/src/components/EventCard.tsx": "Reusable event card with cyan accent bar for upcoming events, teal-themed title and date icon, showing event details and optional delete button.",
+  "frontend/src/components/EventForm.tsx": "Collapsible form for creating events with teal-themed button, inputs, and card border; replaces all forest/gold color references with teal/cyan.",
+  "frontend/src/components/ProfileCard.tsx": "Community directory card with teal avatar background, teal/cyan role badges replacing forest/gold, and teal-themed name text.",
+  "frontend/src/pages/HomePage.tsx": "Landing page with teal-800 hero section; \"Campus\" is styled in blue (text-blue-400/text-blue-500) and \"Connect\" in green (text-green-400/text-green-500) across the hero h1, badge, \"Explore Campus Connect\" h2, and \"Why Campus Connect?\" h2.",
+  "frontend/src/pages/AnnouncementsPage.tsx": "Announcements listing page with teal-themed header icons, info banners in teal/cyan, and empty state text updated to teal palette.",
+  "frontend/src/pages/EventsPage.tsx": "Events page with teal-themed header; \"Campus\" in the \"Campus Events\" page heading is now styled in blue (text-blue-500).",
+  "frontend/src/pages/CommunityPage.tsx": "Community directory page with teal-themed search input, role filter buttons in teal, member count in teal, and empty state text updated to teal palette.",
+  "frontend/src/App.tsx": "Main app component setting up TanStack Router with root layout route, four page routes, and profile setup modal logic to show for new authenticated users."
+}

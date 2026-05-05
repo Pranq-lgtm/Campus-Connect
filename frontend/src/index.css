@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Teal/Cyan primary */
+    --primary: 0.42 0.10 200;
+    --primary-foreground: 0.98 0.005 200;
+
+    /* Cyan accent */
+    --accent: 0.68 0.12 195;
+    --accent-foreground: 0.15 0.05 200;
+
+    /* Backgrounds */
+    --background: 0.97 0.008 200;
+    --foreground: 0.16 0.04 200;
+
+    /* Card */
+    --card: 1 0 0;
+    --card-foreground: 0.16 0.04 200;
+
+    /* Popover */
+    --popover: 1 0 0;
+    --popover-foreground: 0.16 0.04 200;
+
+    /* Secondary */
+    --secondary: 0.93 0.015 200;
+    --secondary-foreground: 0.22 0.06 200;
+
+    /* Muted */
+    --muted: 0.93 0.01 200;
+    --muted-foreground: 0.52 0.02 200;
+
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    /* Border / Input / Ring */
+    --border: 0.88 0.015 200;
+    --input: 0.88 0.015 200;
+    --ring: 0.42 0.10 200;
+
+    /* Charts */
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    /* Sidebar */
+    --sidebar: 0.26 0.09 200;
+    --sidebar-foreground: 0.95 0.01 200;
+    --sidebar-primary: 0.68 0.12 195;
+    --sidebar-primary-foreground: 0.15 0.05 200;
+    --sidebar-accent: 0.32 0.10 200;
+    --sidebar-accent-foreground: 0.95 0.01 200;
+    --sidebar-border: 0.36 0.08 200;
+    --sidebar-ring: 0.68 0.12 195;
+  }
+
+  .dark {
+    --background: 0.13 0.04 200;
+    --foreground: 0.95 0.01 200;
+    --card: 0.17 0.05 200;
+    --card-foreground: 0.95 0.01 200;
+    --popover: 0.20 0.06 200;
+    --popover-foreground: 0.95 0.01 200;
+    --primary: 0.68 0.12 195;
+    --primary-foreground: 0.15 0.05 200;
+    --secondary: 0.20 0.06 200;
+    --secondary-foreground: 0.95 0.01 200;
+    --muted: 0.20 0.06 200;
+    --muted-foreground: 0.65 0.02 200;
+    --accent: 0.68 0.12 195;
+    --accent-foreground: 0.15 0.05 200;
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.205 0 0;
+    --border: 1 0 0 / 12%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.68 0.12 195;
+    --sidebar: 0.17 0.05 200;
+    --sidebar-foreground: 0.95 0.01 200;
+    --sidebar-primary: 0.68 0.12 195;
+    --sidebar-primary-foreground: 0.15 0.05 200;
+    --sidebar-accent: 0.20 0.06 200;
+    --sidebar-accent-foreground: 0.95 0.01 200;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.68 0.12 195;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}

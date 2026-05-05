@@ -1,0 +1,42 @@
+{
+  "kind": "build_request",
+  "title": "Re-apply removal of 'Made with Caffeine.ai' watermark from footer",
+  "projectName": "Campus Connect",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "text": "In frontend/src/components/Layout.tsx, ensure the footer contains absolutely no 'Made with Caffeine.ai' branding, text, links, or attribution of any kind. The footer element itself may remain, but must be completely free of any Caffeine.ai references.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4",
+          "msg-5"
+        ],
+        "quotes": [
+          "Remove made with caffeine.ai mark",
+          "Yes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The site footer renders with no 'Made with Caffeine.ai' text visible",
+        "No anchor tag or link pointing to caffeine.ai or any related URL exists in the footer",
+        "The footer element itself remains present on all pages",
+        "No other Caffeine.ai branding appears anywhere in the footer HTML"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not remove the footer element itself — only strip the Caffeine.ai attribution content",
+    "Do not modify any files listed in frontend.immutablePaths"
+  ],
+  "nonGoals": [
+    "Changing any other footer content or styling",
+    "Modifying any backend files",
+    "Altering the blue/green 'Campus Connect' brand name styling"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
