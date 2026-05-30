@@ -72,10 +72,6 @@ A feature-rich dashboard for finding hackathon teammates. It uses basic recommen
 3.  **Configure Environment Variables**
     Create a `.env` file in the root directory:
     ```env
-    PORT=5000
-    MONGO_URI=your_mongodb_uri
-    GITHUB_CLIENT_ID=your_id
-    GITHUB_CLIENT_SECRET=your_secret
     ```
 4.  **Run the application**
     ```bash
